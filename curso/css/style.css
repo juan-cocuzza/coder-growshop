@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------------------*/
+.logo{
+    width: 80px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 12px;
+}
+/*---------------------------------------------------*/
+/*-----------------pruebas---------------------------*/
+.saca-borde{
+    padding: 0;
+    margin: 0px;
+}
+.destaca{
+    background-color: rgb(166, 179, 125);
+    text-align: center;
+}
+/*---------------------------------------------------*/
+/*----------------header-----------------------------*/
+.barra{
+    background-color: #C0C78C;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacion{
+    box-sizing: border-box;
+    height: 100%;
+}
+.lista-nav{
+    display: flex;
+    list-style: none;
+    color: black;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+/* link */
+.lista-nav a{
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+/*---------------------------------------------------*/
+
+/*------------------banner---------------------------*/
+.banner{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../medios/banner.png);
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    font-size: 2rem;
+    text-shadow: 0px 0px 22px rgba(0,0,0,1);
+}
+.banner p{
+    text-decoration: underline;
+    padding-top: 20px;
+}
+.banner h2{
+    padding-top: 20px;
+}
+/*---------------------------------------------------*/
+
+/*----------------productos destacados---------------*/
+.destacados{
+    display: flex;
+    background-color: rgb(166, 179, 125);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px
+}
+
+.destacados h2{
+    font-size: 2rem;
+    padding: 30px;
+}
+.destacados th{
+    background-color: #C0C78C;
+    font-size: medium;
+    text-decoration: underline;
+}
+.items_destacados{
+    display: flex;
+    width: 80%;
+    margin: 30px;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+}
+.item p{
+    border-top: 1px solid black;
+    padding: 10px 100px;
+}
+.item h3{
+    text-decoration: underline;
+}
+.destacados img{
+    width: 200px;
+}
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+.contactanos{
+    background-color: rgb(166, 179, 125);
+    height: 250px;
+    text-align: center;
+    font-size: 150%;
+}
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+.productos-venta{
+    display: flex;
+    background-color: rgb(166, 179, 125);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.seccion-venta{
+    flex-direction: row;
+    width: 90%;
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seccion-venta h2{
+    margin: 20px;
+    text-decoration: underline;
+}
+.seccion-venta div img{
+    height: 100px;
+    border: 1px solid black;
+}
+.seccion-venta div{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.seccion-venta div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.seccion-venta div div div{
+    flex-direction: column;
+    width: 10%;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+
+/*---------------------------------------------------*/
+
+/*-----------------pie-------------------------------*/
+.barra_footer{
+    display: flex;
+    background-color: #C0C78C;
+    height: 220px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.lista-nav-footer{
+    display: flex;
+    list-style: none;
+    color: black;
+    height: 100%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.lista-nav-footer a {
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+}
+.barra_footer li img{
+    height: 20px;
+    border: none;
+    margin: 0px 10px;
+}
+.logo-footer{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+}
+.barra_footer p{
+    display: flex;
+    align-items: end;
+}
+
+/*---------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.sobre_nosotros{
+    text-align: center;
+    background-color: rgb(166, 179, 125);
+    font-size: 2rem;
+}
+.sobre_nosotros img{
+    height: 400px;
+}
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+.tutoriales{
+    display: flex;
+    background-color: rgb(166, 179, 125);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+.tutoriales h1{
+    margin: 2%;
+}
+.tutoriales div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+}
+.tutoriales div div{
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+}
+.tutoriales video{
+    margin-top: 1%;
+}
+.tutoriales h3{
+    margin-top: 3%;
+}
+.tutoriales a{
+    text-decoration: none;
+}
+/*---------------------------------------------------*/
+
+/*------------grids---ejemplo---clase----------------*/
+.con-grid{
+    display: grid;
+    grid-template-areas: 
+    " h1   h1   h1"
+    "img1 txt1 txt1"
+    "img1 img2 img2"
+    "txt2 img3 txt3";
+    grid-template-columns: repeat(4, 2px);
+    grid-template-rows: 2px 2px 2px;
+    gap: filaspx columnaspx;
+/*mueve el grid*/
+    justify-content: center;
+/*acomodar las seldas*/
+    justify-items: center;
+    align-items: center;
+}
+.con-grid img{
+    width: 100%;
+    height: 100%;
+}
+.img-grid1{
+    grid-area: img1;
+}
+.img-grid2{
+    grid-area: img2;
+}
+.img-grid3{
+    grid-area: img3;
+}
+.h1-grid{
+    grid-area: h1;
+}
+/*---------------------------------------------------*/
+
+/*-----responsive-----media-query-------ejemplo------*/
+
+/* mobile*/
+@media (max-width:500px){
+    /*header*/
+    barra{
+        flex-direction: column;
+        align-items: center;
+    }
+    barra img{
+        width: 50px;
+    }
+    /*grid*/
+    con-grid {
+        grid-template-areas: 
+        "h1"
+        "txt1"
+        "img1"
+        "txt2"
+        "img2"
+        "txt3";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,200px);
+    }
+    .img2 {
+        display: none;
+    }
+    /*footer*/
+    .barra_footer{
+        width: 60%;
+    }
+}
+
+/*tablet*/
+    @media (min-width:501px) and (max-width:950px){
+        
+    }
