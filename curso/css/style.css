@@ -30,7 +30,6 @@ body{
 
 .navbar-toggler {
     margin-left: auto;
-    /* Esto asegura que el botón esté siempre alineado a la derecha */
 }
 /*---------------------------------------------------*/
 /*----------------header-----------------------------*/
@@ -88,93 +87,87 @@ body{
 /*---------------------------------------------------*/
 
 /*----------------productos destacados---------------*/
-.destacados{
-    display: flex;
-    background-color: rgb(166, 179, 125);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 500px
-}
-
-.destacados h2{
-    font-size: 2rem;
-    padding: 30px;
-}
-.destacados th{
-    background-color: #C0C78C;
-    font-size: medium;
-    text-decoration: underline;
-}
-.items_destacados{
-    display: flex;
-    width: 80%;
-    margin: 30px;
+.contenedor {
     padding: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: rgb(166, 179, 125);
 }
-.item{
-    display: flex;
-    border: 1px solid black;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
-    justify-content: space-between;
-}
-.item p{
-    border-top: 1px solid black;
-    padding: 10px 100px;
-}
-.item h3{
-    text-decoration: underline;
-}
-.destacados img{
-    width: 200px;
-}
-/*---------------------------------------------------*/
-
-/*---------------------------------------------------*/
-.carousel-productos {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+.destaca {
     text-align: center;
-}
-.carousel-productos .carousel-inner {
-    display: flex;
-}
-.carousel-productos .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carousel-productos .row {
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-/* .carousel-productos .carousel-item.active {
-    display: flex;
-    justify-content: center;
-} */
-.carousel-productos .card {
-    width: 100%;
-    /* Ajustar el ancho de cada tarjeta para que se muestren tres de manera equilibrada */
+    margin-bottom: 30px;
 }
 
-.carousel-productos .carousel-control-prev-icon,
-.carousel-productos .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Iconos de flechas con fondo más visible */
+.card-group {
+    margin-bottom: 20px;
 }
 
-.carousel-productos .carousel-control-prev,
-.carousel-productos .carousel-control-next {
-    width: 5%;
+.card {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 /*---------------------------------------------------*/
 
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+.carrousel-temporada {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.carrousel-temporada .carousel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+
+}
+.carrousel-temporada .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carrousel-temporada .card {
+    min-width: calc((100% / 3) - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.carrousel-temporada button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.carrousel-temporada .prev {
+    left: 10px;
+}
+.carrousel-temporada .next {
+    right: 10px;
+}
 /*---------------------------------------------------*/
 .contactanos{
     background-color: rgb(166, 179, 125);
@@ -235,7 +228,6 @@ body{
 /*-----------------pie-------------------------------*/
 .barra_footer {
     background-color: #C0C78C;
-    /* Fondo suave */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -247,7 +239,6 @@ body{
 
 .barra_footer .logo-footer {
     max-width: 100px;
-    /* Ajusta el tamaño del logo */
 }
 .navegacion-footer {
     display: flex;

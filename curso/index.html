@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coder grow</title>
     <!--css--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     ntegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--css-->
@@ -69,154 +70,122 @@
             </div>
         </section>
     </main>
-    <!-- Nueva sección entre el carrusel y productos destacados -->
-    <section class="carousel-productos">
-        <div id="productosCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
+    <div class="text-center">
+        <h2>temporada</h2>
+        <section class="carrousel-temporada">
+            <div class="carousel slide" id="carrouseltemporada">
+                <div class="carousel-inner">
+                    <div class="carousel-container">
+                        <div class="col-12 col-sm-4">
                             <div class="card">
-                                <img src="./medios/imagenes/semillas_1.png" class="card-img-top" alt="Producto 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción del producto 1.</p>
+                                <img src="./medios/imagenes/semillas_1.png" class="card-img-top" alt="maceta coder">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">semillas coder_haze x5</h5>
+                                    <p class="cart-text">$50</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                    
+                        <div class="col-12 col-sm-4">
                             <div class="card">
-                                <img src="./medios/imagenes/semilla_2.png" class="card-img-top" alt="Producto 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 2</h5>
-                                    <p class="card-text">Descripción del producto 2.</p>
+                                <img src="./medios/imagenes/semilla_2.png" class="card-img-top" alt="maceta coder">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">semillas coder_kush x5</h5>
+                                    <p class="card-text">$50</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                    
+                        <div class="col-12 col-sm-4">
                             <div class="card">
-                                <img src="./medios/imagenes/semillas_3.png" class="card-img-top" alt="Producto 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 3</h5>
-                                    <p class="card-text">Descripción del producto 3.</p>
+                                <img src="./medios/imagenes/semillas_3.png" class="card-img-top" alt="maceta coder">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">semillas zombie x10</h5>
+                                    <p class="card-text">$50</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./medios/imagenes/producto4.png" class="card-img-top" alt="Producto 4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 4</h5>
-                                    <p class="card-text">Descripción del producto 4.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./medios/imagenes/producto5.png" class="card-img-top" alt="Producto 5">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 5</h5>
-                                    <p class="card-text">Descripción del producto 5.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <img src="./medios/imagenes/producto6.png" class="card-img-top" alt="Producto 6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 6</h5>
-                                    <p class="card-text">Descripción del producto 6.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                    <button class="prev" aria-label="Previous slide" data-bs-target="carrouseltemporada" data-bs-slide="prev" onclick="moveCarousel(-1)">&#10094;
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="next" aria-label="Next slide" data-bs-target="carrouseltemporada" data-bs-slide="next" onclick="moveCarousel(1)">&#10095;
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <!-- Agregar más carousel-item aquí si tienes más productos -->
             </div>
-    
-            <!-- Flechas para navegar -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+        </section>
+    </div>
     <div class="contenedor">
         <article class="col-xl-12 destaca">
-            <h2 class="modal-title">productos destacados</h2>
+            <h2 class="modal-title">Productos Destacados</h2>
             <div class="card-group">
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/linea_fertilizantes.png" class="card-img-top" alt="remera coder">
+                    <img src="./medios/imagenes/linea_fertilizantes.png" class="card-img-top" alt="Pack de fertilizantes">
                     <div class="card-body">
-                        <h5 class="card-title">Pack de fertilizantes</h5>
-                        <p class="card-text">Todo lo q ue nescitas para un cultivo profecional.</p>
-                        <a href="#" class="btn btn-primary boton">ver produto</a>
+                        <h5 class="card-title">Pack de Fertilizantes</h5>
+                        <p class="card-text">Todo lo que necesitas para un cultivo profesional.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/maceta_50lts_coder.png" class="card-img-top" alt="maceta coder">
+                    <img src="./medios/imagenes/maceta_50lts_coder.png" class="card-img-top" alt="Maceta 50lts">
                     <div class="card-body">
-                        <h5 class="card-title">Maceta + fertilizante</h5>
-                        <p class="card-text">maceta 50lts + fertilizante de la casa.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <h5 class="card-title">Maceta + Fertilizante</h5>
+                        <p class="card-text">Maceta 50lts + fertilizante de la casa.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
-                <div class="card col-12 col-sm-6 col-md-6 col-lg-3" >
-                    <img src="./medios/imagenes/sustrato_bolsanegra_coder.png" class="card-img-top" alt="sustrato coder">
+                <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
+                    <img src="./medios/imagenes/sustrato_bolsanegra_coder.png" class="card-img-top" alt="Sustrato 30lts">
                     <div class="card-body">
-                        <h5 class="card-title">Sustrato 30lst</h5>
+                        <h5 class="card-title">Sustrato 30lts</h5>
                         <p class="card-text">Sustrato finamente preparado por nuestros especialistas.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/pulverizador_coder.png" class="card-img-top" alt="pulverizador coder">
+                    <img src="./medios/imagenes/pulverizador_coder.png" class="card-img-top" alt="Pulverizador">
                     <div class="card-body">
-                        <h5 class="card-title">pulverizador</h5>
-                        <p class="card-text">La mejor forma de regar/ferilizar tus platas.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <h5 class="card-title">Pulverizador</h5>
+                        <p class="card-text">La mejor forma de regar/fertilizar tus plantas.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
             </div>
             <div class="card-group">
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/compost_coder.png" class="card-img-top" alt="compost coder">
+                    <img src="./medios/imagenes/compost_coder.png" class="card-img-top" alt="Compost 20lts">
                     <div class="card-body">
                         <h5 class="card-title">Compost 20lts</h5>
-                        <p class="card-text">lo mejor y mas organico para tu suelo.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <p class="card-text">Lo mejor y más orgánico para tu suelo.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/remera_grow.png" class="card-img-top" alt="remera blanca grow">
+                    <img src="./medios/imagenes/remera_grow.png" class="card-img-top" alt="Remera Grow">
                     <div class="card-body">
-                        <h5 class="card-title">remera grow</h5>
+                        <h5 class="card-title">Remera Grow</h5>
                         <p class="card-text">Representa el autocultivo con la mejor onda.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/gorra_coder.png" class="card-img-top" alt="gorra coder">
+                    <img src="./medios/imagenes/gorra_coder.png" class="card-img-top" alt="Gorra Coder">
                     <div class="card-body">
-                        <h5 class="card-title">gorra coder</h5>
-                        <p class="card-text">Gorra edicion limitad coder grow.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <h5 class="card-title">Gorra Coder</h5>
+                        <p class="card-text">Gorra edición limitada Coder Grow.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3">
-                    <img src="./medios/imagenes/geotextil_bicolor.png" class="card-img-top" alt="compost coder">
+                    <img src="./medios/imagenes/geotextil_bicolor.png" class="card-img-top" alt="Maceta Geotextil 30lts">
                     <div class="card-body">
-                        <h5 class="card-title">maceta geotextil 30lts</h5>
-                        <p class="card-text">Una opcion economica y super efectiva.</p>
-                        <a href="#" class="btn btn-primary">ver producto</a>
+                        <h5 class="card-title">Maceta Geotextil 30lts</h5>
+                        <p class="card-text">Una opción económica y súper efectiva.</p>
+                        <a href="#" class="btn btn-primary">Ver Producto</a>
                     </div>
                 </div>
             </div>
@@ -252,12 +221,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script>
-        var carouselElement = document.querySelector('#productosCarousel');
-        var carousel = new bootstrap.Carousel(carouselElement, {
-            interval: 5000, // Tiempo entre cambios (5 segundos)
-            wrap: true // Para que se reinicie al final
-        });
-    </script>
 </body>
 </html>
