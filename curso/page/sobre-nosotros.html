@@ -12,61 +12,86 @@
 </head>
 <body>
     <!-- encabezado -->
-    <!-- encabezado -->
-    <header class="barra ">
-        <!-- manu de nav BS -->
-        <nav class="navegacion navbar col-xl-12">
-            <div class="container col-xl-4">
+    <header class="barra">
+        <nav class="navegacion navbar navbar-expand-lg col-xl-12">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="logo col-xl-2" src="../medios/logo.png" alt="logo de la pagina">
+                    <img class="logo col-xl-2" src="../medios/imagenes/logo.png" alt="logo de la pagina">
                 </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-end" id="navbarTogglerDemo03">
+                    <ul class="lista-nav nav col-xl-8">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="cultivo.html">cultivo</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="sobre-nosotros.html">sobre nosotros</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="tutoriales.html">tutoriales</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="container-fluid col-xl-8 justify-content-end">
-                <ul class="lista-nav nav col-xl-8 ">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="cultivo.html">cultivo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre-nosotros.html">sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tutoriales.html">tutoriales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-    
         </nav>
     </header>
     <main class="sobre_nosotros">
-        <h1>sobre nosotros</h1>
-        <section>
-            <div>
-                <h2>Conocenos</h2>
-                <p>Somos un growshop emergente, nuesro equipo actualmente cuenta con 1 persona, a su vez este es nuestro primer intento de una pagina web, en la que intente usar todos mis recursos para lograr crear un sitio web con diversidad de contenidos </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nisi corrupti assumenda, culpa, repellat ipsam, facere incidunt placeat laudantium sapiente expedita delectus nemo nam perferendis eos vitae animi enim sunt!</p>
+        <h1>Sobre Nosotros</h1>
+        <section class="sobre-nuestra-historia">
+            <div class="contenido">
+                <h2>Conócenos</h2>
+                <p>Somos un growshop emergente, nuestro equipo actualmente cuenta con 1 persona. Este es nuestro primer
+                    intento de una página web, donde he intentado usar todos mis recursos para crear un sitio con diversidad
+                    de contenidos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nisi corrupti assumenda, culpa,
+                    repellat ipsam, facere incidunt placeat laudantium sapiente expedita delectus nemo nam perferendis eos
+                    vitae animi enim sunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, nostrum 
+                    voluptates maiores pariatur dicta sequi facere neque dignissimos. Earum sunt dolor, iure cupiditate sit deserunt sed adipisci omnis obcaecati atque!</p>
             </div>
-            <div>
-                <h2>Nuestros Origenes</h2>
-                <p>Todo comenzo siendo un dibujo en la hoja llena de entusiasmo, luego lo lleve a un warframe y con todos los conocimiento adquirido gracias al curso pude llevar a codigo ese warframe</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dolore aut adipisci quisquam quod aliquam fugit eaque iusto praesentium? Ullam, molestias amet numquam fuga quisquam minus iusto voluptatum dolor itaque?</p>
+            <div class="contenido">
+                <h2>Nuestros Orígenes</h2>
+                <p>Todo comenzó siendo un dibujo en una hoja llena de entusiasmo. Luego lo llevé a un wireframe y, con todos
+                    los conocimientos adquiridos gracias al curso, pude llevar a código ese wireframe.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dolore aut adipisci quisquam quod
+                    aliquam fugit eaque iusto praesentium? Ullam, molestias amet numquam fuga quisquam minus iusto
+                    voluptatum dolor itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque impedit
+                    veniam alias, assumenda exercitationem fugiat, consequuntur quis atque vero ipsa quibusdam accusantium accusamus inventore dolore, repudiandae debitis recusandae voluptate!</p>
             </div>
-            <img src="../wireframe-pagina-coder.png" alt="">
         </section>
+        <img class="wireframe" src="../wireframe-pagina-coder.png" alt="Wireframe de la página">
     </main>
-    <footer class="barra_footer">
-        <a href="../index.html"><img class="logo" src="../medios/logo.png" alt="logo de la pagina"></a>
-        <nav class="navegacion">
-            <ul class="lista-nav">
-                <li><a href="contacto.html">contacto</a></li>
-                <li><img src="../medios/logowpp.png" alt=""><a href="#">+54-11-3356 689</a></li>
-                <li><img src="../medios/logoig.png" alt=""><a href="#">codergrowshop_lp</a></li>
-                <li><img src="../medios/telefono_negro.png" alt=""><a href="">+54-11-5467 809</a></li>
-            </ul>
-        </nav>
-        <p>© 2024 coder grow</p>
+    <footer class="col-12 barra_footer">
+        <div class="container-fluid justify-content-between">
+            <a href="../index.html">
+                <img class="logo-footer" src="../medios/imagenes/logo.png" alt="logo de la pagina">
+            </a>
+            <nav class="navegacion-footer">
+                <ul class="lista-nav-footer">
+                    <li class="nav-item">
+                        <a href="https://wa.me/54113356689" class="nav-link"><img src="../medios/imagenes/logowpp.png"
+                                alt="WhatsApp" class="icon-footer"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/codergrowshop_lp/" class="nav-link"><img
+                                src="../medios/imagenes/logoig.png" alt="Instagram" class="icon-footer"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tel:+54115467809" class="nav-link"><img src="../medios/imagenes/telefono_negro.png"
+                                alt="Teléfono" class="icon-footer"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-center py-2">
+            <p class="mb-0">© 2024 Coder Grow</p>
+        </div>
     </footer>
     <!--js--BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

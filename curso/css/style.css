@@ -387,14 +387,49 @@ textarea:focus {
 
 /*---------------------------------------------------*/
 
-/*--------------------------------------------------*/
-.sobre_nosotros{
+/*-----------------sobre--nosotros-------------------*/
+.sobre_nosotros {
+    background-color: #f5f5f5;
+    /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
     text-align: center;
-    background-color: rgb(166, 179, 125);
-    font-size: 2rem;
+    /* Centrar el texto */
 }
-.sobre_nosotros img{
-    height: 400px;
+
+.sobre-nuestra-historia {
+    display: flex;
+    flex-direction: column;
+    /* Apilar las secciones de contenido */
+    gap: 20px;
+    /* Espaciado entre secciones */
+    margin-bottom: 20px;
+    /* Espacio entre la historia y la imagen */
+}
+
+.contenido {
+    background-color: #ffffff;
+    /* Fondo blanco para el contenido */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 15px;
+    /* Espacio interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+.wireframe {
+    width: 90%;
+    /* Ajusta el ancho del wireframe */
+    max-width: 600px;
+    /* Máximo ancho del wireframe */
+    margin: 0 auto;
+    /* Centrar la imagen */
+    border-radius: 10px;
+    /* Bordes redondeados en la imagen */
 }
 /*---------------------------------------------------*/
 
