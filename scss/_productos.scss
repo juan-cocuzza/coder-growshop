@@ -1,0 +1,34 @@
+@import 'variables';
+
+.contenedor {
+    padding: 20px;
+    background-color: $highlight-color;
+}
+
+.card-group {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: $secondary-color;
+    border-color: #FEFAE0;
+
+    &:hover {
+        background-color: $secondary-color;
+        border-color: #FEFAE0;
+    }
+}
