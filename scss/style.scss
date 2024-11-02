@@ -1,10 +1,10 @@
-@import 'variables';
-@import 'reset';
-@import 'header';
-@import 'banner';
-@import 'productos';
-@import 'carrousel';
-@import 'contacto';
-@import 'footer';
-@import 'about';
-@import 'tutoriales';
+// Importa todos los módulos primero
+@use 'variables';
+@use 'cards';
+@use 'buttons';
+@use 'header';
+@use 'productos';
+@use 'contacto';
+@use 'footer';
+@use 'about';
+@use 'tutoriales';

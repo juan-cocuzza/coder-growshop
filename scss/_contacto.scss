@@ -1,7 +1,7 @@
-@import 'variables';
+@use "variables";
 
 .contacto {
-    background-color: $light-color;
+    background-color: #f5f5f5;
     font-family: 'Arial', sans-serif;
 
     .container {
@@ -12,7 +12,7 @@
 
     h1,
     h2 {
-        color: $dark-color;
+        color: #333;
         font-weight: bold;
     }
 
@@ -22,9 +22,9 @@
     }
 
     .form-container {
-        background-color: $highlight-color;
+        background-color: rgb(166, 179, 125);
         border-radius: 15px;
-        box-shadow: 0 4px 8px $secondary-color;
+        box-shadow: 0 4px 8px  #B99470;;
         padding: 20px;
         margin-bottom: 20px;
     }
@@ -41,12 +41,12 @@
         &:focus {
             border-color: #FEFAE0;
             outline: none;
-            box-shadow: 0 0 5px $secondary-color;
+            box-shadow: 0 0 5px #B99470;;
         }
     }
 
     button[type="submit"] {
-        background-color: $secondary-color;
+        background-color: #B99470;
         color: black;
         padding: 10px 20px;
         border: none;
@@ -61,21 +61,21 @@
 }
 
 .accordion-container {
-    background-color: $highlight-color;
+    background-color: rgb(166, 179, 125);
     border-radius: 15px;
-    box-shadow: 0 4px 8px $secondary-color;
+    box-shadow: 0 4px 8px #B99470;
     margin-bottom: 20px;
 
     .accordion-item {
-        background-color: $highlight-color;
+        background-color: rgb(166, 179, 125);
         border: 1px solid #FEFAE0;
         border-radius: 5px;
         margin-bottom: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
         .accordion-button {
-            background-color: $highlight-color;
-            color: $dark-color;
+            background-color: rgb(166, 179, 125);
+            color: #333;
 
             &:not(.collapsed) {
                 color: black;
@@ -87,7 +87,7 @@
         }
 
         .accordion-body {
-            background-color: $highlight-color;
+            background-color: rgb(166, 179, 125);
         }
     }
 }

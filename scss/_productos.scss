@@ -1,8 +1,9 @@
-@import 'variables';
+@use 'variables';
 
 .contenedor {
     padding: 20px;
-    background-color: $highlight-color;
+    background-color: rgb(166, 179, 125);
+    
 }
 
 .card-group {
@@ -24,11 +25,11 @@
 }
 
 .btn-primary {
-    background-color: $secondary-color;
+    background-color: #B99470;
     border-color: #FEFAE0;
 
     &:hover {
-        background-color: $secondary-color;
+        background-color: #B99470;
         border-color: #FEFAE0;
     }
 }

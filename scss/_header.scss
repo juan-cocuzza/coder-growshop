@@ -1,7 +1,6 @@
-@import 'variables';
-
+@use 'variables';
 .barra {
-    background-color: $primary-color;
+    background-color: #C0C78C;
     position: sticky;
     top: 0;
     width: 100%;
@@ -29,7 +28,7 @@
         text-decoration: none;
 
         &:hover {
-            color: $secondary-color;
+            color: #B99470;
         }
     }
 }
