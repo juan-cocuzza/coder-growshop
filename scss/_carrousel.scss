@@ -1,14 +1,32 @@
 @use 'variables';
 
+@mixin card-style($bg-color, $border-color: #ddd, $radius: 8px, $padding: 20px) {
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: $padding;
+    transition: transform 0.3s ease;
+}
+
 .carrousel-temporada {
     display: flex;
     justify-content: center;
     margin: 20px;
+    @extend .card-style; 
 
     .carousel {
         position: relative;
         width: 80%;
         overflow: hidden;
+    }
+
+    .carousel-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px; // Espaciado entre tarjetas
+        padding: 20px 0;
     }
 
     .carousel-container {
@@ -19,10 +37,6 @@
     .card {
         min-width: calc((100% / 3) - 20px);
         margin: 10px;
-        padding: 20px;
-        background-color: $light-color;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        @include card-style($bg-color: variables.$light-color);
     }
 }
