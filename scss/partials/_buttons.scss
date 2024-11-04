@@ -12,7 +12,6 @@
     }
 }
 
-// Usamos el mixin en un botón específico
 .btn-primary {
-    @include button-styles(#B99470, #FEFAE0);
+    @include button-styles($secondary-color, $light-color);
 }

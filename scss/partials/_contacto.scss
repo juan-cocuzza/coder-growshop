@@ -1,7 +1,5 @@
-@use "variables";
-
 .contacto {
-    background-color: #f5f5f5;
+    background-color: $light-color;
     font-family: 'Arial', sans-serif;
 
     .container {
@@ -12,7 +10,7 @@
 
     h1,
     h2 {
-        color: #333;
+        color: $dark-color;
         font-weight: bold;
     }
 
@@ -22,9 +20,9 @@
     }
 
     .form-container {
-        background-color: rgb(166, 179, 125);
+        background-color: $highlight-color;
         border-radius: 15px;
-        box-shadow: 0 4px 8px  #B99470;;
+        box-shadow: 0 4px 8px  $secondary-color;;
         padding: 20px;
         margin-bottom: 20px;
     }
@@ -33,20 +31,20 @@
     select,
     textarea {
         background-color: #f9f9f9;
-        border: 1px solid #FEFAE0;
+        border: 1px solid $light-color;
         border-radius: 5px;
         padding: 10px;
         font-size: 1rem;
 
         &:focus {
-            border-color: #FEFAE0;
+            border-color: $light-color;
             outline: none;
-            box-shadow: 0 0 5px #B99470;;
+            box-shadow: 0 0 5px $secondary-color;;
         }
     }
 
     button[type="submit"] {
-        background-color: #B99470;
+        background-color: $secondary-color;
         color: black;
         padding: 10px 20px;
         border: none;
@@ -55,27 +53,27 @@
         font-size: 1rem;
 
         &:hover {
-            background-color: #FEFAE0;
+            background-color: $light-color;
         }
     }
 }
 
 .accordion-container {
-    background-color: rgb(166, 179, 125);
+    background-color: $highlight-color;
     border-radius: 15px;
-    box-shadow: 0 4px 8px #B99470;
+    box-shadow: 0 4px 8px $secondary-color;
     margin-bottom: 20px;
 
     .accordion-item {
-        background-color: rgb(166, 179, 125);
-        border: 1px solid #FEFAE0;
+        background-color: $highlight-color;
+        border: 1px solid $light-color;
         border-radius: 5px;
         margin-bottom: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
         .accordion-button {
-            background-color: rgb(166, 179, 125);
-            color: #333;
+            background-color: $highlight-color;
+            color: $dark-color;
 
             &:not(.collapsed) {
                 color: black;
@@ -87,7 +85,7 @@
         }
 
         .accordion-body {
-            background-color: rgb(166, 179, 125);
+            background-color: $highlight-color;
         }
     }
 }

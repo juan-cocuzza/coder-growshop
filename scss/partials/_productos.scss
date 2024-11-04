@@ -1,8 +1,6 @@
-@use 'variables';
-
 .contenedor {
     padding: 20px;
-    background-color: rgb(166, 179, 125);
+    background-color: $highlight-color;
     
 }
 
@@ -25,11 +23,11 @@
 }
 
 .btn-primary {
-    background-color: #B99470;
-    border-color: #FEFAE0;
+    background-color: $secondary-color;
+    border-color: $light-color;
 
     &:hover {
-        background-color: #B99470;
-        border-color: #FEFAE0;
+        background-color: $secondary-color;
+        border-color: $light-color;
     }
 }

@@ -1,10 +1,9 @@
-// Importa todos los módulos primero
-@use 'variables';
-@use 'cards';
-@use 'buttons';
-@use 'header';
-@use 'productos';
-@use 'contacto';
-@use 'footer';
-@use 'about';
-@use 'tutoriales';
+@import './partials/variables';
+@import './partials/cards';
+@import './partials/buttons';
+@import './partials/header';
+@import './partials/productos';
+@import './partials/contacto';
+@import './partials/footer';
+@import './partials/about';
+@import './partials/tutoriales';

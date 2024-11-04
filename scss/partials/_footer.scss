@@ -1,7 +1,5 @@
-@use 'variables';
-
 .barra_footer {
-    background-color: #C0C78C;
+    background-color: $primary-color;
     color: black;
     width: 100%;
     display: flex;
