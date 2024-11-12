@@ -1,0 +1,79 @@
+.productos-venta {
+    padding: 20px;
+    background-color: $light-color;
+
+    h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        color: #555;
+        margin: 20px 0;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    .hijo-venta {
+        padding: 10px;
+        background-color: $highlight-color;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #333;
+
+            strong {
+                font-weight: 600;
+                color: #000;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .hijo-venta {
+            padding: 15px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hijo-venta {
+            padding: 20px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        padding: 40px;
+    }
+
+    .seccion-venta {
+        margin-bottom: 50px;
+    }
+
+    .row {
+        gap: 10px;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}

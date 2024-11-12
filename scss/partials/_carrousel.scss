@@ -23,7 +23,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 20px; // Espaciado entre tarjetas
+        gap: 20px;
         padding: 20px 0;
     }
 
@@ -35,6 +35,6 @@
     .card {
         min-width: calc((100% / 3) - 20px);
         margin: 10px;
-        @include card-style($bg-color: variables.$light-color);
+        @include card-style($bg-color: $light-color);
     }
 }
