@@ -10,6 +10,10 @@
         width: 20%;
         height: auto;
         max-width: 20%;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
 

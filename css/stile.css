@@ -31,6 +31,9 @@
   height: auto;
   max-width: 20%;
 }
+.barra img:hover {
+  transform: scale(1.05);
+}
 
 .navegacion {
   box-sizing: border-box;
